@@ -4,6 +4,8 @@ var game = new Phaser.Game(800,600, Phaser.Auto,'',{
     update: update
 });
 
+game.state.add('menu', new Menu());
+
 var paddle1;
 var paddle2;
 var ball;
@@ -13,8 +15,6 @@ var ball_velocity;
 
 var score1;
 var score2;
-
-this.drawLine();
 
 function preload() {
     game.load.image('paddle','assets/paddle.png')
@@ -30,7 +30,7 @@ function preload() {
 }
 
 function create() {
-
+    
         ball_launched = false;
         ball_velocity = 400;
 
