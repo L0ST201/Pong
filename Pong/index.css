@@ -16,3 +16,20 @@ canvas {
     border: 3px dotted #FFF;
     box-sizing: border-box;
 }  
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align:center;
+    text-shadow: 
+    0 0 7px rgb(210, 210, 210),
+    0 0 10px rgb(192, 241, 255),
+    0 0 21px rgb(192, 241, 255),
+    0 0 42px rgb(192, 241, 255),
+    0 0 82px rgb(192, 241, 255),
+    0 0 55px rgb(192, 241, 255),
+    0 0 70px rgb(192, 241, 255),
+    0 0 80px rgb(192, 241, 255);
+  
+ 
+    
+}

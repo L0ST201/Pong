@@ -6,6 +6,7 @@ var game = new Phaser.Game(800,600, Phaser.Auto,'',{
 
 game.state.add('menu', new Menu());
 
+let openingText;
 var paddle1;
 var paddle2;
 var ball;
@@ -30,7 +31,6 @@ function preload() {
 }
 
 function create() {
-    
         ball_launched = false;
         ball_velocity = 400;
 
@@ -45,6 +45,19 @@ function create() {
 
         score1 = 0;
         score2 = 0;
+
+        openingText = this.add.text(
+            this.physics.world.bounds.width / 2,
+            this.physics.world.bounds.height / 2,
+            'Press SPACE to Start',
+            {
+                fontFamily: 'Monaco, Courier, monospace',
+                fontSize: '50px',
+                fill: '#fff'
+            }
+        );
+        
+        openingText.setOrigin(0.5);
 }
 
 function update() {
@@ -63,17 +76,17 @@ function update() {
     if(ball.body.blocked.left){
         score2+= 1;
         game.sound.play('miss_1');
+        ball.reset(game.world.centerX, game.world.centerY);
     }
     else if(ball.body.blocked.right){
         score1 += 1;
         game.sound.play('hit_1');
+        ball.reset(game.world.centerX, game.world.centerY);
     }
 
     paddle2.body.velocity.setTo(ball.body.velocity.y);
     paddle2.body.velocity.x = 0;
-    paddle2.body.maxVelocity.y = 250;
-
-    
+    paddle2.body.maxVelocity.y = 250;  
 }
 
 function create_paddle(x,y){
@@ -95,7 +108,6 @@ function control_paddle(paddle,y){
     } else if (paddle.y > game.world.height){
     paddle.y = game.world.height - paddle.height / 2;
     }
-
 }
 
 function create_ball(x,y){
