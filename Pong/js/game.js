@@ -14,14 +14,19 @@ var ball_velocity;
 var score1;
 var score2;
 
+this.drawLine();
+
 function preload() {
     game.load.image('paddle','assets/paddle.png')
     game.load.image('ball','assets/ball.png')
 
     game.load.bitmapFont('font', 'assets/font.png','assets/font.xml');
 
+    game.load.audio('bounce_1', ['assets/ballBounce.m4a', 'assets/ballBounce.ogg']);
+    game.load.audio('bounce_2', ['assets/ballBounce.m4a', 'assets/ballBounce.ogg']);
+
+    game.load.audio('miss_1', ['assets/ballMissed.m4a', 'assets/ballMissed.ogg']);
     game.load.audio('hit_1', ['assets/ballHit.m4a', 'assets/ballHit.ogg']);
-    game.load.audio('hit_2', ['assets/ballHit.m4a', 'assets/ballHit.ogg']);
 }
 
 function create() {
@@ -49,17 +54,19 @@ function update() {
     
     control_paddle(paddle1, game.input.y);
     game.physics.arcade.collide(paddle1,ball, function (){
-        game.sound.play('hit_1');
+        game.sound.play('bounce_1');
     });
     game.physics.arcade.collide(paddle2,ball, function (){
-        game.sound.play('hit_2');
+        game.sound.play('bounce_2');
     });
 
     if(ball.body.blocked.left){
         score2+= 1;
+        game.sound.play('miss_1');
     }
     else if(ball.body.blocked.right){
         score1 += 1;
+        game.sound.play('hit_1');
     }
 
     paddle2.body.velocity.setTo(ball.body.velocity.y);
