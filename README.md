@@ -1,30 +1,30 @@
 # Pong
 
 ## Checklist:
-•	All of my code is pushed up into a repository.
-•	Fill out the User stories section
-•	Turn in the URL to Kanban website
-•	The project is working and able to run with index.html
-•	Submit the repository link and list of group members, if applicable, to Canvas.
+- [x] All of my code is pushed up into a repository.
+- [x] Fill out the `User stories` section
+- [x] Turn in the URL to Kanban website 
+- [x] The project is working and able to run with index.html 
+- [x] Submit the repository link and list of group members, if applicable, to Canvas.
 
 ## Functional User Stories
 As a user, I want to be able to play a game the resembles the original game of pong for entertainment purposes. I also would like to have the game be more interactive by displaying the score on the game board.
 Example 1 
-Given: Pong Game data available 
-When: The user starts/runs the Pong game.
-Then: The window should load a working application.
+<br>Given: Pong Game data available 
+<br>When: The user starts/runs the Pong game.
+<br>Then: The window should load a working application.
 Example 2 
-Given: Pong Game data available
-When: The user left clicks the ball will launch.
-Then: The user moves the paddle with the mouse, it only travels up or down in the same direction as the cursor.
+<br>Given: Pong Game data available
+<br>When: The user left clicks the ball will launch.
+<br>Then: The user moves the paddle with the mouse, it only travels up or down in the same direction as the cursor.
 Example 3 
-Given: Pong Game data available
-When: The user misses the ball and it hits the users boundary point 
-Then: The ball then reset, and the score will now show 0 for the player and 1 for CPU.
+<br>Given: Pong Game data available
+<br>When: The user misses the ball and it hits the users boundary point 
+<br>Then: The ball then reset, and the score will now show 0 for the player and 1 for CPU.
 Example 4 
-Given: Pong Game data available
-When: The user continues the game, and to launch the ball, the user left clicks once more, but this time the score is 0-1 in favor of the CPU. This time, though, the user reaches the CPU's boundary point.
-Then: The game will then display a score of 1 for the player and 1 for the CPU.
+<br>Given: Pong Game data available
+<br>When: The user continues the game, and to launch the ball, the user left clicks once more, but this time the score is 0-1 in favor of the CPU. This time, though, the user reaches the CPU's boundary point.
+<br>Then: The game will then display a score of 1 for the player and 1 for the CPU.
 
 ## Kanban Board
 https://ideaboardz.com/for/Ben/4404621
