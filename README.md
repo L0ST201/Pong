@@ -28,7 +28,7 @@ As a user, I want to be able to play a game the resembles the original game of p
 
 ## Kanban Board
 https://ideaboardz.com/for/Ben/4404621
-List of the different tasks assigned
+<br>List of the different tasks assigned<br>
 1.	Create packages and files for the game
 2.	Create and update index.html file
 3.	Create and update style.css file
