@@ -9,7 +9,7 @@
 
 ## Functional User Stories
 As a user, I want to be able to play a game the resembles the original game of pong for entertainment purposes. I also would like to have the game be more interactive by displaying the score on the game board.
-<br><br>xample 1 
+<br><br>Example 1 
 <br>Given: Pong Game data available 
 <br>When: The user starts/runs the Pong game.
 <br>Then: The window should load a working application.
