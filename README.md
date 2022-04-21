@@ -9,19 +9,19 @@
 
 ## Functional User Stories
 As a user, I want to be able to play a game the resembles the original game of pong for entertainment purposes. I also would like to have the game be more interactive by displaying the score on the game board.
-<br>Example 1 
+<br><br>xample 1 
 <br>Given: Pong Game data available 
 <br>When: The user starts/runs the Pong game.
 <br>Then: The window should load a working application.
-Example 2 
+<br><br>Example 2 
 <br>Given: Pong Game data available
 <br>When: The user left clicks the ball will launch.
 <br>Then: The user moves the paddle with the mouse, it only travels up or down in the same direction as the cursor.
-Example 3 
+<br><br>Example 3 
 <br>Given: Pong Game data available
 <br>When: The user misses the ball and it hits the users boundary point 
 <br>Then: The ball then reset, and the score will now show 0 for the player and 1 for CPU.
-Example 4 
+<br><br>Example 4 
 <br>Given: Pong Game data available
 <br>When: The user continues the game, and to launch the ball, the user left clicks once more, but this time the score is 0-1 in favor of the CPU. This time, though, the user reaches the CPU's boundary point.
 <br>Then: The game will then display a score of 1 for the player and 1 for the CPU.
